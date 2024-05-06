@@ -18,6 +18,28 @@
 - Maker
 - Web Profiler
 
+## Build
+
+After creating your project with this template, in the project directory:
+
+````bash
+ddev start
+````
+
+Then the containers is running (you can check with `ddev describe`)
+
+````bash
+ddev ssh
+````
+
+And within the container:
+
+````bash
+composer i
+npm i
+npm run build
+````
+
 ## Good to knows
 
 Don't forget to edit these files before start:
