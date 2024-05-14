@@ -18,9 +18,19 @@
 - Maker
 - Web Profiler
 
+## Good to knows
+
+Before start, rename `ddev-symfony`  occurrences with the desired project name. These occurrences can be found in the following files:
+
+- .ddev/config.yaml
+- .ddev/docker-compose.mercure.yaml
+- .env
+
+⚠️ Do not change the DATABASE_URL, it's the default database configuration
+
 ## Build
 
-After creating your project with this template, in the project directory:
+In the project directory:
 
 ````bash
 ddev start
@@ -39,13 +49,3 @@ composer i
 npm i
 npm run build
 ````
-
-## Good to knows
-
-Don't forget to edit these files before start:
-
-- .ddev/config.yaml
-- .ddev/docker-compose.mercure.yaml
-- .env
-
-⚠️ Do not change the DATABASE_URL, it's the default database configuration
